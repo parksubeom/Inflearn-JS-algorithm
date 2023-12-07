@@ -22,6 +22,7 @@ function solution(arr) {
      */
   let answer = 0;
   let result = arr;
+  const x = [1, 2, 3, 4];
   arr.unshift([0, 0, 0, 0, 0]);
   arr.push([0, 0, 0, 0, 0]);
   arr = arr.map((el) => {
@@ -30,7 +31,6 @@ function solution(arr) {
   });
   for (let i = 1; i < result.length - 1; i++) {
     for (let j = 1; j < result.length - 1; j++) {
-      let now = result[i][j];
       let max = Math.max(
         result[i - 1][j],
         result[i + 1][j],
@@ -43,7 +43,8 @@ function solution(arr) {
       }
     }
   }
-  return answer++;
+  x[0] = 5;
+  return x;
 }
 
 let arr = [

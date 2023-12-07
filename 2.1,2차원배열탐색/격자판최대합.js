@@ -4,6 +4,7 @@ function solution(arr) {
      */
   let reverse = arr.map((el) => el.slice().reverse());
   let sum = 0;
+
   for (let i = 0; i < arr.length; i++) {
     let 행의합 = 0;
     let 열의합 = 0;
@@ -18,7 +19,7 @@ function solution(arr) {
       sum = Math.max(행의합, 열의합, 좌대각합, 우대각합);
     }
   }
-  return sum;
+  return x;
 }
 
 let arr = [
